@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa99019c95.js" crossorigin="anonymous"></script>
+    <title>Landing Page</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+          <h2 class="logo">Travel.</h2>
+          <div class="toggle"></div>
+        </header>
+        <video src="images/background.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+          <h2>Never Stop </h2>
+          <h3>Exploring India</h3>
+          <p>India, a land of enchantment, beckons you to a journey like no other.<br>
+             From the majestic Himalayas to the serene backwaters of Kerala, <br>
+             from the bustling markets of Delhi to the tranquil beaches of Goa, <br>
+             Explore India promises a kaleidoscope of experiences <br>
+             that will leave an indelible mark on your soul.<br>
+             Step into a world where tradition meets modernity. <br>
+             Explore ancient temples adorned with intricate carvings, witness the grandeur <br>
+             of historical forts, and immerse yourself in the colorful <br>
+             tapestry of festivals that paint the country in vibrant hues.
+          </p>
+          <a href="#" nav="">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+          </ul>
+      </section>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <script>
+        const menuToggle = document.querySelector('.toggle');
+const showcase = document.querySelector('.showcase');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  showcase.classList.toggle('active');
+})
+      </script>
+</body>
+</html>
